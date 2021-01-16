@@ -12,7 +12,7 @@ class Settings():
         self.bg_color = (35, 84, 103)
         # Start parametrs of a ship
         self.ship_limit = 3
-        self.fleet_drop_speed = 50
+        self.fleet_drop_speed = 5
         # Speed of game
         self.speedup_scale = 1.1
         self.score_scale = 1.5

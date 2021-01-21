@@ -17,10 +17,13 @@ class GameStats():
 
     def get_high_score_from_file(self):
         '''We just return highest score frome file'''
-        with open('record', 'r') as hs:
             try:
+                hs = open('record', 'r')
                 self.high_score = int(hs.readline())
+                hs.close()
             except:
+                hs = open('record', 'r')
                 self.high_score = 0
                 hs.write('0')
+                hs.close()
 
